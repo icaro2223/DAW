@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    width: 30%;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar .foto {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.sidebar .cargo {
+    font-size: 16px;
+    color: #bdc3c7;
+    margin-bottom: 20px;
+}
+
+.sidebar .contato h2 {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.sidebar ul li {
+    margin-bottom: 8px;
+}
+
+.sidebar a {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+.conteudo {
+    width: 70%;
+    padding: 30px;
+}
+
+.conteudo section {
+    margin-bottom: 30px;
+}
+
+.conteudo h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #1abc9c;
+    padding-bottom: 5px;
+}
+
+.item {
+    margin-bottom: 15px;
+}
+
+.item h3 {
+    font-size: 18px;
+    color: #34495e;
+}
+
+.periodo {
+    font-size: 14px;
+    color: #888;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.habilidades {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .conteudo {
+        width: 100%;
+    }
+
+    .sidebar {
+        text-align: center;
+    }
+
+    .sidebar ul {
+        text-align: center;
+    }
+}
